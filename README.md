@@ -1,4 +1,4 @@
-# Week-3-4
+# Week-3-4 (some of the problems were solved with the help of some classmates
 WEEK 3 & 4
 
 LLM used: CHAT GPT-4o mini
