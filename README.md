@@ -85,4 +85,4 @@ git push -u origin main
 ```
 FILES SUBMITTED: gene_RBS.py and output_RBS.txt
 
-NUMBER OF LINES: 26 output_RBS.txt (7.9 K)
+NUMBER OF LINES: 900 output_RBS.txt (7.9 K)
