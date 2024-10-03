@@ -52,7 +52,7 @@ SUBMITTED FILES: Rosalind_problem72.py
 ## Problem 4: Finding reading frames including the reverse complements and applying code to all 14 downloaded genomes
 ```bash
 nano gene_finder_adapted.py 
-find /home/quezadgc/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_finder_adapted.py {} all_orfs_adapted.txt \;
+find /home/alboeis/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_finder_adapted.py {} all_orfs_adapted.txt \;
 git add gene_finder_adapted.py  all_orfs_AminoAcids.txt
 git commit -m "Saving files of problem 4"
 ```
@@ -65,7 +65,7 @@ NUMBER OF LINES: 765037 all_orfs_AminoAcids.txt (60M)
 We need to run the code of "GeneFinderFilter.py" to implement a filter by length that discards short ORFs that are unlikely to be functional genes (e.g., less than 100 codon)
 ```bash
 nano gene_filter_new.py
-find /home/quezadgc/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_filter_new.py {} output_filter_new.txt -l 100 \;
+find /home/alboeis/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_filter_new.py {} output_filter_new.txt -l 100 \;
 git add gene_filter_new.py output_filter_new.txt
 git commit -m "Saving files of problem 5"
 ```
@@ -78,7 +78,7 @@ NUMBER OF LINES: 162136 output_filter_new.txt (45 M)
 We need to run the code of "GeneFinderRBS.py" to filter all predicted ORFs based on whether they contain a Shine-Dalgarno sequence (AGGAGG) up to 20bp upstream of the start codon.
 ```bash
 nano gene_RBS.py
-find /home/quezadgc/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_RBS.py {} output_RBS.txt -l 100 -r AGGAGG -u 20 \;
+find /home/alboeis/ncbi_dataset/data -type f -name "*GCF*.fna" -exec python gene_RBS.py {} output_RBS.txt -l 100 -r AGGAGG -u 20 \;
 git add gene_RBS.py gene_RBS.py
 git commit -m "Files of Problem 6"
 git push -u origin main
